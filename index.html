@@ -24,6 +24,8 @@
     COPY THE MESSAGE AND PASTE IT TO GET SUPRISE ! ...
 </body>
 <script>
+
+     window.addEventListener("contextmenu",(e) => e.preventDefault());
     document.addEventListener("copy", (event)=>{
         const data = window.getSelection().toString();
         event.clipboardData.setData(
